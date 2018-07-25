@@ -1,0 +1,16 @@
+\begin{tikzpicture}[aS,scale=0.9, every node/.style={scale=0.9}]  
+  	
+  	  	\node[color=red,Aproc] (a_1) {$a_1$};\node[Asol,right of=a_1] (a_1s) {};\path (a_1) edge (a_1s);
+  	\specl{above}{a_1}{b_1};
+    \specl{above}{b_1}{e_1}
+  	\link{e_1}{a_0};
+  	\edl{a_0};
+    \link{b_1}{d_0};
+    \edl{a_0};
+  	\specl{below}{a_1}{c_1};
+    \link{c_1}{e_0};
+    \edl{e_0};
+    \specl{below}{c_1}{d_1};
+	\link{d_1}{f_0};
+  	\edl{f_0};
+\end{tikzpicture}
